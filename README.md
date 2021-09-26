@@ -40,12 +40,13 @@ python main.py --help
 2. With the token, we retrieve the playlist's tracks, storing the following informations:
     title, artist, album, album image URL.
 
-    **Note: to be more efficient, this is done yielding each track retrieved**
+    **Note: to be more efficient, this is achieved by yielding each track retrieved**.
 
 3. Then, using [urllib](https://docs.python.org/3/library/urllib.request.html#urllib.request.urlopen),
     we query for the track title and artist in YouTube.
     
-    **Note: as of today, all it does is to return the first video URL found. Check this [issue]() for more information**
+    **Note: as of today, all it does is to return the first video URL found. Check this 
+    [issue](https://github.com/demetrius-mp/spotify-downloader/issues/1) for more information.**
 
 4. With the video URL, we use [pafy](https://github.com/mps-youtube/pafy) to download the track from the best audio stream.
 
