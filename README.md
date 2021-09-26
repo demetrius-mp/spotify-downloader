@@ -16,6 +16,10 @@ If the port :8888 is in use, please change to one that's not in use.
 You will need the` Client ID` and the `Client secret` for the next step.
 
 ### 2. Environment configuration
+Install the requirements using the following command:
+```
+pip install -r requirements.txt
+```
 **Note: It's higly recommended that you create a virtual environment for this
 tool.**
 
